@@ -1,0 +1,50 @@
+<p>{{ title }}</p>
+<p>{{ message }}</p>
+
+<!-- <button type="button" mat-raised-button (click)="dialogRef.close(true)">OK</button> -->
+<!-- <button type="button" mat-raised-button (click)="openDialog()">Ok</button> -->
+<!-- <button type="button" mat-button (click)="dialogRef.close()">Cancel</button> -->
+
+
+
+
+
+
+
+
+<!-- 
+<button mat-button color="primary" (click)="openDialogWithTemplateRef(myDialog)">Open dialog</button>
+<button mat-button color="accent" (click)="openDialogWithoutRef()">Open second dialog</button> -->
+
+
+
+
+
+
+
+
+<ng-template #myDialog>
+    <h2 matDialogTitle>Dialog!</h2>
+    <mat-dialog-content>
+      <p>The content of this dialog came from an <code>ng-template</code>! Amazing, right?</p>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button type="button" mat-button (click)="dialogRef.close()">Cancel</button>
+    </mat-dialog-actions>
+  </ng-template>
+  <!-- Dialog template #2 -->
+  
+  
+  
+  <ng-template #secondDialog>
+    <h2 matDialogTitle>Lovely dialog!</h2>
+    <mat-dialog-content>
+      <p>The content of this dialog came from an <code>ng-template</code>! Mind-blowing, right? (However, this wasn't passed in to a method while the other one was)</p>
+      <mat-slide-toggle>I'm a slide toggle!</mat-slide-toggle>
+      <mat-checkbox>I'm a checkbox!</mat-checkbox>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-button matDialogClose color="primary">I <mat-icon class="inline-icon">favorite</mat-icon> dialogs!</button>
+    </mat-dialog-actions>
+  </ng-template>
+  

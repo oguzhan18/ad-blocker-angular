@@ -1,0 +1,32 @@
+<h1 *ngIf="this.isBlocked == true" style="color:green; text-align: center; margin-top: 5em;"> Ad Block  Working</h1>  
+<h1 *ngIf="this.isBlocked == false" style="color:red; text-align: center; margin-top: 5em;"> Ad Block Not Working </h1>  
+<ng-template #myDialog>
+  <h2 matDialogTitle>Which of these extensions do you have?  </h2>
+  <mat-dialog-content>
+    <p><img src="../../assets/images/browser_ab-2.png" style="width:50%; margin-left:25%;" alt=""></p>
+    <ol>
+      <li>Click the AdBlock icon <img src="../../assets/images/ab_icon-1.svg" width="15" alt=""> icon in the browser extension area in the upper right corner of your screen. (You can see a small number covering part of the icon.)</li>
+      <li> Choose to run on pages on this site.</li>
+      <li> Select the "Run AdBlock on sites" dialog pipe Exception. AdBlock icon rotates "like" sections.</li>
+    </ol>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button type="button" mat-button (click)="closeDialogWithoutRef()">Cancel</button>
+  </mat-dialog-actions>
+</ng-template>
+<!-- Dialog template #2 -->
+
+
+
+<ng-template #secondDialog>
+  <h2 matDialogTitle>AD BLOCKER WORKS!</h2>
+  <mat-dialog-content>
+    <p>We are aware that advertisements are annoying, but in order to continue serving you, we have to post
+      advertisements. You can support us by removing the domain name from the Adblocker application.</p>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button matDialogClose color="primary" (click)="openDialogWithTemplateRef(myDialog)">
+      OK
+    </button>
+  </mat-dialog-actions>
+</ng-template>

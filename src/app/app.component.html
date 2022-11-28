@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <app-ad-blocker [showContent]="true" (blocker)="isBlocked($event)"></app-ad-blocker>
+    </div>
+  </div>
+</div>
+
+
+<!-- Language preferences: {{languages | json}}
+
+<div *ngIf="languages[0] == 'tr'">TR</div>
+<div *ngIf="languages[0] == 'en'">EN</div> -->
+
+ 
