@@ -16,7 +16,10 @@ Use it as you want
 - Ease of Use.
 - Angular 
   
-
+## Screenshots 
+<img src="./ss/2.png">
+<img src="./ss/3.png">
+<img src="./ss/4.png">
 
 
 ## For Support
