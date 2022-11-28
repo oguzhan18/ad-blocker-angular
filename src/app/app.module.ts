@@ -5,17 +5,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AdBlockerComponent } from './ad-blocker/ad-blocker.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ModalComponent } from './modal/modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { MatDialogModule } from '@angular/material/dialog';
-import { MatButtonModule } from '@angular/material/button';
-import { DialogsService } from './modal/dialogs.service';
+import { MatButtonModule } from '@angular/material/button'; 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdBlockerComponent, 
-    ModalComponent
+    AdBlockerComponent,  
   ],
   imports: [
     BrowserModule,
@@ -26,12 +23,7 @@ import { DialogsService } from './modal/dialogs.service';
     MatDialogModule,
     MatDialogModule,
     MatButtonModule,
-  ],
-  entryComponents: [
-    ModalComponent
   ], 
-  exports: [ModalComponent], 
-  providers: [DialogsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

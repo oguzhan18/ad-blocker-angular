@@ -2,8 +2,7 @@ import { animate, keyframes, state, style, transition, trigger } from '@angular/
 import { Component, OnInit, Output, EventEmitter, Input, OnDestroy, ViewChild, TemplateRef } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Subscription } from 'rxjs';
-import { CommonService } from '../common.service';
-import { DialogsService } from '../modal/dialogs.service';
+import { CommonService } from '../common.service'; 
 
 @Component({
   selector: 'app-ad-blocker',
@@ -34,7 +33,7 @@ export class AdBlockerComponent implements OnInit, OnDestroy {
 
 
 
-  constructor(private _common: CommonService, private dialog: MatDialog, private dialogsService: DialogsService,) {
+  constructor(private _common: CommonService, private dialog: MatDialog,) {
     this.states['state1'] = 'shakestart';
     this.states['state2'] = 'shakestart';
   }
